@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array.length === 0</title>
+</head>
+<body>
+
+    <input type="text" id="texto" />
+    <button onclick="cargar()">CARGAR VALOR</button>
+    <script>
+
+       
+        const array = []
+        if ( array.length === 0) {
+            console.log(`El array no tiene ningun valor`)
+        }
+
+        
+        function cargar() {
+            var text = document.getElementById('texto').value;
+        console.log(text)
+            array.push(text)
+        if ( array.length === 0) {
+            console.log(`El array no tiene ningun valor`)
+        }else {
+            console.log(`El array tiene ${array.length} valor/s`)
+        }
+    }
+    </script>
+
+</body>
+</html>
